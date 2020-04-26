@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe Game</h1>
+
+    <div id="intro">
+      <div class="input-field">
+        <label for="first-name">Enter First Player Name</label>
+        <input id="first" type="text" placeholder="First player name" /><br />
+      </div>
+      <div class="input-field">
+        <label for="second-name">Enter Second Player Name</label>
+        <input id="second" type="text" placeholder="Second player name" />
+      </div>
+      <div class="input-field">
+        <button type="button" onclick="startGame()">Start Game</button>
+      </div>
+    </div>
+
+    <!-- Game board-->
+    <div class="reset">
+      <button id="reset-button" onclick="resetGame()">Reset Game</button>
+    </div>
+    <h2 id="result-text"></h2>
+
+    <div id="board" class="center grid-container">
+      <div id="0" onclick="clicked(this)" class="grid-item"></div>
+      <div id="1" onclick="clicked(this)" class="grid-item"></div>
+      <div id="2" onclick="clicked(this)" class="grid-item"></div>
+      <div id="3" onclick="clicked(this)" class="grid-item"></div>
+      <div id="4" onclick="clicked(this)" class="grid-item"></div>
+      <div id="5" onclick="clicked(this)" class="grid-item"></div>
+      <div id="6" onclick="clicked(this)" class="grid-item"></div>
+      <div id="7" onclick="clicked(this)" class="grid-item"></div>
+      <div id="8" onclick="clicked(this)" class="grid-item"></div>
+    </div>
+
     <script src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>

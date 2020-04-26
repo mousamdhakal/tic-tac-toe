@@ -1,0 +1,53 @@
+.grid-container {
+  display: none;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ddd;
+  min-width: 500px;
+  min-height: 500px;
+}
+.grid-item {
+  background-color: #555;
+  border: 1px solid white;
+  min-width: 166px;
+  min-height: 166px;
+  padding: 20px;
+}
+.innertext {
+  font-size: 40px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: white;
+  margin-top: 45px;
+}
+
+.input-field {
+  padding: 20px;
+  width: 500px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+button {
+  display: block;
+  margin: auto;
+}
+.intro {
+  display: block;
+}
+
+.reset {
+  display: none;
+}
+
+#result-text {
+  display: none;
+  font-weight: 200;
+  margin-left: 20px;
+}
